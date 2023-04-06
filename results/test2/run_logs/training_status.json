@@ -1,0 +1,65 @@
+{
+    "EndLessRunnerBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 2000006,
+                "file_path": "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-2000006.onnx",
+                "reward": -34.27586204044778,
+                "creation_time": 1680571458.3176327,
+                "auxillary_file_paths": [
+                    "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-2000006.pt"
+                ]
+            },
+            {
+                "steps": 2499968,
+                "file_path": "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-2499968.onnx",
+                "reward": -30.02878763357347,
+                "creation_time": 1680572048.2491329,
+                "auxillary_file_paths": [
+                    "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-2499968.pt"
+                ]
+            },
+            {
+                "steps": 2999992,
+                "file_path": "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-2999992.onnx",
+                "reward": -26.363636499778792,
+                "creation_time": 1680572513.753022,
+                "auxillary_file_paths": [
+                    "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-2999992.pt"
+                ]
+            },
+            {
+                "steps": 3000011,
+                "file_path": "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-3000011.onnx",
+                "reward": -27.344117778846446,
+                "creation_time": 1680572513.794128,
+                "auxillary_file_paths": [
+                    "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-3000011.pt"
+                ]
+            },
+            {
+                "steps": 3000011,
+                "file_path": "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-3000011.onnx",
+                "reward": null,
+                "creation_time": 1680615679.7479212,
+                "auxillary_file_paths": [
+                    "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-3000011.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3000011,
+            "file_path": "results\\test2\\EndLessRunnerBehaviour.onnx",
+            "reward": null,
+            "creation_time": 1680615679.7479212,
+            "auxillary_file_paths": [
+                "results\\test2\\EndLessRunnerBehaviour\\EndLessRunnerBehaviour-3000011.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.0+cpu"
+    }
+}
