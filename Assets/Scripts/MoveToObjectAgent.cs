@@ -7,15 +7,27 @@ using Unity.MLAgents.Sensors;
 
 public class MoveToObjectAgent : Agent
 {
+    // Reference to the target object
     [SerializeField] private Transform targetTransform;
+
+    // Agent movement speed
     [SerializeField] private float moveSpeed = 2.5f;
+
+    // Material to display when the agent reaches the target
     [SerializeField] Material winMat;
+
+    // Material to display when the agent hits a wall
     [SerializeField] Material loseMat;
+
     [SerializeField] MeshRenderer ground;
+
+    // The initial position of the agent
     private Vector3 initalPosition;
 
     private void Awake()
     {
+        // Set the initial position of the agent to its current position
+
         initalPosition = transform.localPosition;
     }
 
@@ -33,6 +45,7 @@ public class MoveToObjectAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        // Add the position of the agent and the target to the observation 
         sensor.AddObservation(transform.position);
         sensor.AddObservation(targetTransform.position);
     }
@@ -47,6 +60,8 @@ public class MoveToObjectAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        // Add the position of the agent and the target to the observation vector
+
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
 
@@ -55,14 +70,20 @@ public class MoveToObjectAgent : Agent
 
     private void OnTriggerEnter(Collider other)
     {
+        // Add the position of the agent and the target to the observation vector
+
         GameObject go = other.gameObject;
         if (go.CompareTag("Goal")) {
+            // Set a negative reward and change the material of the ground to the lose material
+
             SetReward(1f);
             ground.material = winMat;
             EndEpisode();
         }
         else if (go.CompareTag("Wall"))
         {
+            // Set a negative reward and change the material of the ground to the lose material
+
             SetReward(-1f);
             ground.material = loseMat;
             EndEpisode();
