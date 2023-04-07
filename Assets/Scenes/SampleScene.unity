@@ -158,7 +158,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 145
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1067,9 +1067,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b6b9f3e2711d36d409b56eb6b8daa4ad, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e4b89e6bc2fd01349a17d19298e3ab54, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1268,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 402455380600422661, guid: bc657197ad9dcde40924f0c0b0c9d810, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 402455380600422682, guid: bc657197ad9dcde40924f0c0b0c9d810, type: 3}
       propertyPath: m_Model
       value: 
@@ -1340,5 +1344,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 402455381346008920, guid: bc657197ad9dcde40924f0c0b0c9d810, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 6619044108064106052, guid: 7c05b438ae74ad94fb97d0ce68e2fb8b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc657197ad9dcde40924f0c0b0c9d810, type: 3}
