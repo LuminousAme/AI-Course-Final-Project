@@ -20,6 +20,7 @@ public class EndlessRunnerAgent : Agent
     //audio sources 
     [SerializeField] private AudioSource deathAudioSource;
     [SerializeField] private AudioSource jumpAudioSource;
+    [SerializeField] private AudioSource musicAudioSource;
 
     Vector3 initalPosition;  // The initial position of the agent
     Vector3 closestObstaclePosition;// The position of the closest obstacle to the agent
@@ -72,6 +73,7 @@ public class EndlessRunnerAgent : Agent
     {
         // Reset the agent's position to its initial position
         transform.localPosition = initalPosition;
+        musicAudioSource.Play();
     }
 
     public override void CollectObservations(VectorSensor sensor)
